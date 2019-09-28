@@ -5,13 +5,16 @@
   "dependencies": {
     "@material-ui/core": "^4.4.3",
     "@material-ui/icons": "^4.4.3",
+    "html2canvas": "^1.0.0-rc.5",
     "papaparse": "^5.1.0",
     "react": "^16.10.0",
     "react-dom": "^16.10.0",
     "react-dropzone": "^10.1.9",
+    "react-router": "^5.1.1",
     "react-router-dom": "^5.1.1",
     "react-scripts": "3.1.2",
-    "style-it": "^2.1.4"
+    "style-it": "^2.1.4",
+    "use-react-router": "^1.0.7"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -2,7 +2,7 @@ import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
-import SearchIcon from '@material-ui/icons/Search';
+import Image from '@material-ui/icons/Image';
 import MenuIcon from '@material-ui/icons/Menu';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -11,6 +11,8 @@ import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import DraftsIcon from '@material-ui/icons/Drafts';
 import Description from '@material-ui/icons/Description';
+import Link from '@material-ui/core/Link';
+import { BrowserRouter as Router, Route, Link as RouterLink } from "react-router-dom"
 
 const StyledMenu = withStyles({
     paper: {
@@ -82,7 +84,17 @@ export default function MenuComponent({ importCsv }) {
                     </ListItemIcon>
                     <ListItemText primary="Import CSV" />
                 </StyledMenuItem>
-
+                <StyledMenuItem >
+                    <ListItemIcon>
+                        <Image />
+                    </ListItemIcon>
+                    <Link component={RouterLink}
+                        noWrap
+                        variant="body2"
+                        to="/canvas"
+                    ><ListItemText primary="View as image" />
+                    </Link>
+                </StyledMenuItem>
             </StyledMenu>
         </div>
     );

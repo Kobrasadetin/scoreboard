@@ -11,11 +11,13 @@ const useStyles = makeStyles(theme => {
         parentBox:
         {
             display: 'flex',
-            alignItems: 'flex-start'
+            alignItems: 'flex-start',
+            backgroundColor: "#FFFFFF",
+            padding: "20px",
         },
         dropzone: {
             border: `4px dotted ${theme.palette.divider}`,
-            padding: '0 20px 0 20px'
+            padding: '10px 80px 10px 80px'
         },
     })
 })
