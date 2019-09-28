@@ -17,7 +17,8 @@ const useStyles = makeStyles(theme => {
         },
         dropzone: {
             border: `4px dotted ${theme.palette.divider}`,
-            padding: '10px 80px 10px 80px'
+            padding: '10px 80px 10px 80px',
+            width: "100%",
         },
     })
 })
@@ -42,13 +43,13 @@ function CsvImport({ setVisible, setCsv }) {
     const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop })
 
     return (
-        <Container className={classes.parentBox}>
+        <div className={classes.parentBox}>
             <Box><IconButton onClick={() => setVisible(false)}><Cancel /></IconButton></Box>
             <Box className={classes.dropzone} {...getRootProps()}>
                 <input {...getInputProps()} />
                 <p>Drag 'n' drop some files here, or click to select files</p>
             </Box>
-        </Container>
+        </div>
     )
 }
 

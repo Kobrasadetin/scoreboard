@@ -112,8 +112,8 @@ function App() {
             <Info />
           </IconButton>
         </Toolbar>
-        {showImport && <CsvImport setVisible={setShowImport} setCsv={setCsv}></CsvImport>}
         {showMenu && <OptionsMenu options={options} setOptions={setOptions} importCsv={setShowImport} />}
+        {showImport && <CsvImport setVisible={setShowImport} setCsv={setCsv}></CsvImport>}
         {renderResult}
       </Route>
       <Route path="/canvas">
